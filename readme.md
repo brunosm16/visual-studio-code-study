@@ -1,6 +1,6 @@
 ## visual-studio-code-study
 
-<a><img width="240" align="right" src="https://user-images.githubusercontent.com/11978772/40430986-a0eb7b92-5e63-11e8-80eb-43fe07f664a6.png"></a>
+<a><img width="240" align="right" src="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white"></a>
 
 Repository created to study Visual Studio Code.
 
