@@ -5,19 +5,31 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
-			"name": "Launch via NPM",
+			"console": "integratedTerminal",
+			"internalConsoleOptions": "neverOpen",
+			"name": "Debug with Nodemon",
+			"program": "${workspaceFolder}/debugging/src/index.js",
 			"request": "launch",
-			"cwd": "${workspaceFolder}/debugging",
-			"runtimeArgs": ["run-script", "debug"],
-			"runtimeVersion": "18.17.0",
-			"runtimeExecutable": "npm",
+			"restart": true,
+			"runtimeExecutable": "nodemon",
 			"skipFiles": ["<node_internals>/**"],
-			"envFile": "${workspaceFolder}/debugging/.env",
-			"env": {
-				"NODE_ENV": "debug"
-			},
 			"type": "node"
 		}
+		// {
+		// 	"name": "Launch via NPM",
+		// 	"request": "launch",
+		// 	"cwd": "${workspaceFolder}/debugging",
+		// 	"runtimeArgs": ["run-script", "debug"],
+		// 	"runtimeVersion": "18.17.0",
+		// 	"runtimeExecutable": "npm",
+		// 	"skipFiles": ["<node_internals>/**"],
+		// 	"envFile": "${workspaceFolder}/debugging/.env",
+		// 	"restart": true,
+		// 	"env": {
+		// 		"NODE_ENV": "debug"
+		// 	},
+		// 	"type": "node"
+		// }
 		// {
 		//     "name": "Attach by Process ID",
 		//     "processId": "${command:PickProcess}",

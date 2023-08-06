@@ -1,14 +1,14 @@
 const crypto = require('crypto');
 
 const generateIds = () => {
-	const ids = [];
+	const idsArr = [];
 
 	// eslint-disable-next-line no-plusplus
 	for (let i = 0; i <= 50; i++) {
-		ids.push(crypto.randomUUID());
+		idsArr.push(crypto.randomUUID());
 	}
 
-	return ids;
+	return idsArr;
 };
 
 generateIds();
