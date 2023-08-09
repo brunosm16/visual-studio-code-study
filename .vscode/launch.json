@@ -14,31 +14,29 @@
 			"runtimeExecutable": "nodemon",
 			"skipFiles": ["<node_internals>/**"],
 			"type": "node"
+		},
+		{
+			"name": "Launch via NPM",
+			"request": "launch",
+			"cwd": "${workspaceFolder}/debugging",
+			"runtimeArgs": ["run-script", "debug"],
+			"runtimeVersion": "18.17.0",
+			"runtimeExecutable": "npm",
+			"skipFiles": ["<node_internals>/**"],
+			"envFile": "${workspaceFolder}/debugging/.env",
+			"restart": true,
+			"env": {
+				"NODE_ENV": "debug"
+			},
+			"type": "node"
+		},
+		{
+			"name": "Attach by Process ID",
+			"processId": "${command:PickProcess}",
+			"request": "attach",
+			"skipFiles": ["<node_internals>/**"],
+			"type": "node",
+			"port": 9229
 		}
-		// {
-		// 	"name": "Launch via NPM",
-		// 	"request": "launch",
-		// 	"cwd": "${workspaceFolder}/debugging",
-		// 	"runtimeArgs": ["run-script", "debug"],
-		// 	"runtimeVersion": "18.17.0",
-		// 	"runtimeExecutable": "npm",
-		// 	"skipFiles": ["<node_internals>/**"],
-		// 	"envFile": "${workspaceFolder}/debugging/.env",
-		// 	"restart": true,
-		// 	"env": {
-		// 		"NODE_ENV": "debug"
-		// 	},
-		// 	"type": "node"
-		// }
-		// {
-		//     "name": "Attach by Process ID",
-		//     "processId": "${command:PickProcess}",
-		//     "request": "attach",
-		//     "skipFiles": [
-		//         "<node_internals>/**"
-		//     ],
-		//     "type": "node",
-		//     "port": 9229
-		// }
 	]
 }

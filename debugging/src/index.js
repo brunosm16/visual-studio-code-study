@@ -1,4 +1,5 @@
 const crypto = require('crypto');
+const { buildGreetMessage } = require('./lib/greeting-fn');
 
 const generateIds = () => {
 	const idsArr = [];
@@ -12,3 +13,6 @@ const generateIds = () => {
 };
 
 generateIds();
+
+// eslint-disable-next-line no-unused-vars
+const greetMessage = buildGreetMessage('Lorem Ipsum');
