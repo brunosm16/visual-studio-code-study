@@ -8,7 +8,7 @@
 			"console": "integratedTerminal",
 			"internalConsoleOptions": "neverOpen",
 			"name": "Debug with Nodemon",
-			"program": "${workspaceFolder}/debugging/src/index.js",
+			"program": "${workspaceFolder}/src/index.js",
 			"request": "launch",
 			"restart": true,
 			"runtimeExecutable": "nodemon",
@@ -18,12 +18,12 @@
 		{
 			"name": "Launch via NPM",
 			"request": "launch",
-			"cwd": "${workspaceFolder}/debugging",
+			"cwd": "${workspaceFolder}",
 			"runtimeArgs": ["run-script", "debug"],
 			"runtimeVersion": "18.17.0",
 			"runtimeExecutable": "npm",
 			"skipFiles": ["<node_internals>/**"],
-			"envFile": "${workspaceFolder}/debugging/.env",
+			"envFile": "${workspaceFolder}/.env",
 			"restart": true,
 			"env": {
 				"NODE_ENV": "debug"
