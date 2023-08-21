@@ -16,7 +16,8 @@
 			"type": "node",
 			"env": {
 				"NODE_ENV": "debug"
-			}
+			},
+			"envFile": "${workspaceFolder}/src/config/local.env"
 		},
 		{
 			"name": "Launch via NPM",
