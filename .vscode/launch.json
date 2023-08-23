@@ -35,6 +35,21 @@
 			"type": "node"
 		},
 		{
+			"name": "Launch via NPM | Server",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"runtimeArgs": ["run-script", "start:server"],
+			"runtimeVersion": "18.17.0",
+			"runtimeExecutable": "npm",
+			"skipFiles": ["<node_internals>/**"],
+			"envFile": "${workspaceFolder}/.env",
+			"restart": true,
+			"env": {
+				"NODE_ENV": "debug"
+			},
+			"type": "node"
+		},
+		{
 			"name": "Attach by Process ID",
 			"processId": "${command:PickProcess}",
 			"request": "attach",

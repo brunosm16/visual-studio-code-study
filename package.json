@@ -9,6 +9,7 @@
 	"scripts": {
 		"debug": "node src/index.js",
 		"start:debug": "nodemon --inspect src/index.js",
+		"start:server": "node --inspect src/server.js",
 		"prettier:fix": "npx prettier --write .",
 		"lint": "npx eslint .",
 		"eslint:fix": "npx eslint --fix",
