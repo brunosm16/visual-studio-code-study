@@ -5,6 +5,15 @@
 	"version": "0.2.0",
 	"configurations": [
 		{
+			"name": "Debug TypeScript",
+			"request": "launch",
+			"skipFiles": ["<node_internals>/**"],
+			"type": "node",
+			"program": "${workspaceFolder}/src/typescript-debug/main.ts",
+			"preLaunchTask": "tsc: build - tsconfig.json",
+			"outFiles": ["${workspaceFolder}/dist/**/*.js", "!**/node_modules/**"]
+		},
+		{
 			"console": "integratedTerminal",
 			"internalConsoleOptions": "neverOpen",
 			"name": "Debug with Nodemon",
