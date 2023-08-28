@@ -6,12 +6,13 @@
 	"configurations": [
 		{
 			"name": "Debug TypeScript",
+			"program": "${workspaceFolder}/src/main.ts",
+			"preLaunchTask": "tsc: build - tsconfig.json",
+			"outFiles": ["${workspaceFolder}/dist/**/*.js", "!**/node_modules/**"],
+			"sourceMaps": true,
 			"request": "launch",
 			"skipFiles": ["<node_internals>/**"],
-			"type": "node",
-			"program": "${workspaceFolder}/src/typescript-debug/main.ts",
-			"preLaunchTask": "tsc: build - tsconfig.json",
-			"outFiles": ["${workspaceFolder}/dist/**/*.js", "!**/node_modules/**"]
+			"type": "node"
 		},
 		{
 			"console": "integratedTerminal",
